@@ -40,12 +40,10 @@ services:
     restart: always
     ports:
       - "8081:80"
-      - "443:443"
     depends_on:
       - wp
     volumes:
       - ./data/nginx/wordpress.conf:/etc/nginx/conf.d/default.conf
-      - ./data/certs:/etc/nginx/certs/
       - ./data/nginx/log:/var/log/nginx/
       - ./data/wordpress:/var/www/html
       - ./wp-content:/var/www/html/wp-content:rw
