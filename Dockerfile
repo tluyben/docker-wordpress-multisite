@@ -95,7 +95,7 @@ VOLUME /var/www/html
 
 EXPOSE 80
 
-ENV WORDPRESS_VERSION 6.0.1
+ENV WORDPRESS_VERSION 6.1.1
 
 RUN set -ex; \
   curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; \
